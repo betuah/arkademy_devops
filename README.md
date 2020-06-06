@@ -1,7 +1,6 @@
-<h1>Arkademt DevOps</h1>
+<h1>Arkademy DevOps</h1>
 
-## About Author
+## About Me
 - **Name :** Betuah Anugerah
 - **Email :** betuahanugerah@gmail.com
-- **Github :** [My Github Libraries](https://github.com/betuah/)
 <hr>
