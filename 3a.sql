@@ -17,16 +17,6 @@ CREATE TABLE `tb_catagory`  (
 )
 
 /* Membuat tabel cashier */
-CREATE TABLE `tb_product`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `price` varchar(10) NOT NULL,
-  `id_catagory` int(11) NOT NULL,
-  `id_cashier` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-)
-
-/* Membuat tabel cashier */
 CREATE TABLE `tb_cashier`  (
   `id_cashier` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
