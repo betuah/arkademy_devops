@@ -61,7 +61,7 @@ $(document).ready(() => {
     $('#catagoryEdit').append(selectCatagory)
 
     // Search
-    $("#search").on("keyup", function() {
+    $("#search").on("keyup", () => {
         let value = $(this).val().toLowerCase()
         $("#myTable tbody tr").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
