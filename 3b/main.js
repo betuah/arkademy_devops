@@ -28,7 +28,7 @@ const del = (id) => {
     $('#delData').html(`data ${ress.cashier} ID <span style="color: #FADC9C">${ress.id_cashier}</span>`)
 }
 
-$(document).ready(function(){
+$(document).ready(() => {
     const htmlTable = dataProduct.map((data, i) => {
         return `<tr>
             <td>${i+1}</td>
