@@ -26,8 +26,8 @@ $(document).ready(function(){
             <td>${data.catagory}</td>
             <td>${data.price}</td>
             <td>
-                <button onClick="edit(${data.id})" class="btn btn-lg" style="background-color:transparent; color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-                <button onClick="edit(${data.id})" class="btn btn-lg" style="background-color:transparent; color: red"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                <button onClick="edit(${data.id})" data-toggle="modal" data-target="#editModal" class="btn btn-lg" style="background-color:transparent; color: green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                <button onClick="delete(${data.id})" class="btn btn-lg" style="background-color:transparent; color: red"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
             </td>
         </tr>`
         
@@ -55,4 +55,9 @@ $(document).ready(function(){
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         })
     })
+
+    //edit
+    function edit(id) {
+        alert(id)
+    }
 });
