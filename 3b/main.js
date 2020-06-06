@@ -21,19 +21,14 @@ const edit = (id) => {
     $('#catagoryEdit').val(res.id_cat)
     $('#productEdit').val(res.product)
     $('#priceEdit').val(res.price)
-};
+}
 
 const del = (id) => {
     const ress = dataProduct.find(data => data.id === id)
-    console.log(ress)
     $('#delData').html(`data ${ress.cashier} ID <span style="color: #FADC9C">${ress.id_cashier}</span>`)
-    // $('#delData').text(id)
 }
 
 $(document).ready(function(){
-
-    
-    
     const htmlTable = dataProduct.map((data, i) => {
         return `<tr>
             <td>${i+1}</td>
