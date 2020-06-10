@@ -20,7 +20,7 @@ const soal2 = value => {
     // Membuat baris
     if(value % 2 === 0) {        
         for (let i = 1; i <= value; i++) {
-			arr.push(pic2.join(' '))
+	     arr.push(pic2.join(' '))
       	}
     } else {
       	const cal = (value - 1) / 2 + 1
