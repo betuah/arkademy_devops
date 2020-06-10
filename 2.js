@@ -18,15 +18,23 @@ const soal2 = value => {
     }
 
     // Membuat baris
-    for (let i = 1; i <= value; i++) {
-        if(i % 3 === 0) {
-            arr.push(pic2.join(' '))
-        } else {
-            arr.push(pic1.join(' '))
-        }
+    if(value % 2 === 0) {        
+        for (let i = 1; i <= value; i++) {
+			arr.push(pic2.join(' '))
+      	}
+    } else {
+      	const cal = (value - 1) / 2 + 1
+        
+      	for (let i = 1; i <= value; i++) {
+          if(i === cal) {
+              arr.push(pic2.join(' '))
+          } else {
+              arr.push(pic1.join(' '))
+          }
+        }        
     }
 
     return arr.join('\n')
 }
 
-console.log(soal2(9))
+console.log(soal2(5))
