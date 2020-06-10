@@ -26,11 +26,11 @@ const soal2 = value => {
       	const cal = (value - 1) / 2 + 1
         
       	for (let i = 1; i <= value; i++) {
-          if(i === cal) {
-              arr.push(pic2.join(' '))
-          } else {
-              arr.push(pic1.join(' '))
-          }
+            if(i === cal) {
+                arr.push(pic2.join(' '))
+            } else {
+                arr.push(pic1.join(' '))
+            }
         }        
     }
 
